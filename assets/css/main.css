@@ -3715,6 +3715,11 @@
 	background: linear-gradient(90deg, #ef4444, #dc2626, #b91c1c);
 }
 
+/* Fix contact section text alignment on mobile */
+#contact .content-box p {
+	text-align: left !important;
+}
+
 /* Modern Typography */
 p {
 	font-family: 'Inter', system-ui, sans-serif;
