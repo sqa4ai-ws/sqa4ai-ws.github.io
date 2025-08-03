@@ -1767,6 +1767,7 @@
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
+		color: red;
 		padding: 0.25em 0.65em;
 	}
 
@@ -3718,6 +3719,36 @@
 /* Fix contact section text alignment on mobile */
 #contact .content-box p {
 	text-align: left !important;
+}
+
+/* Submission Button Styles */
+.submission-btn {
+	display: inline-block;
+	background: linear-gradient(135deg, #2563eb, #3b82f6);
+	color: white !important;
+	padding: 12px 24px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 0.95rem;
+	margin-left: 15px;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+	border: none;
+	cursor: pointer;
+}
+
+.submission-btn:hover {
+	background: linear-gradient(135deg, #1d4ed8, #2563eb);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+	text-decoration: none;
+	color: white !important;
+}
+
+.submission-btn:active {
+	transform: translateY(0);
+	box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
 }
 
 /* Modern Typography */
