@@ -3442,6 +3442,7 @@
 	position: relative;
 	min-height: 70vh;
 	display: flex;
+	height: 80vh;
 	align-items: center;
 	justify-content: center;
 	background: 
