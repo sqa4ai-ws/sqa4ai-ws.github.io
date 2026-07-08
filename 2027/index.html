@@ -7,10 +7,10 @@
 <html>
 
 <head>
-    <title>SQA4AI 2026</title>
+    <title>SQA4AI 2027</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="#"></script>
@@ -23,6 +23,48 @@
     </script>
 
 
+
+    <style>
+        .nav-item.dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #ffffff;
+            min-width: 190px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            border-radius: 8px;
+            padding: 8px;
+            list-style: none;
+            margin: 6px 0 0 0;
+            z-index: 999;
+        }
+
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            margin: 0;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 8px 12px;
+            color: #334155;
+            text-decoration: none;
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 0.9em;
+            border-radius: 6px;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .dropdown-menu li a:hover {
+            color: #2563eb;
+            background: rgba(37, 99, 235, 0.08);
+        }
+    </style>
 
 </head>
 
@@ -43,7 +85,7 @@
                 <!-- Logo -->
                 <div class="logo">
                     <a class="logo-wrap" href="#body">
-                        <img src="images/logo-text.png" alt="SQA4AI" class="navbar-logo-img" />
+                        <img src="../images/logo-text.png" alt="SQA4AI" class="navbar-logo-img" />
                     </a>
                 </div>
                 <!-- End Logo -->
@@ -65,6 +107,14 @@
                                                             href="#committee">Committee</a></li>
                         <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
                                                             href="#contact">Contact</a></li>
+                        <li class="js_nav-item nav-item dropdown">
+                            <a class="nav-item-child nav-item-hover" href="#">Previous Editions ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../index.html">SQA4AI 2026</a></li>
+                                <li><a href="https://sqa4ai2025.github.io/SQA4AI2025/index.html" target="_blank" rel="noopener">SQA4AI 2025</a></li>
+                                <li><a href="https://sqa4ai.github.io/sqa4ai2022/" target="_blank" rel="noopener">SQA4AI 2022</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -76,17 +126,16 @@
 <!--========== END HEADER ==========-->
 
 <!--========== SLIDER ==========-->
-<div id="home" class="promo-block parallax-window" data-parallax="scroll" data-image-src="images/background.jpg">
+<div id="home" class="promo-block parallax-window" data-parallax="scroll" data-image-src="../images/background.jpg">
     <div class="container">
         <div class="row">
             <div class="col-sm-10">
                 <div class="promo-logo">
-                    <img src="images/sqa4ailogo_nobg.png" alt="SQA4AI 2026" class="overlay-logo-img" />
+                    <img src="../images/sqa4ailogo_nobg.png" alt="SQA4AI 2027" class="overlay-logo-img" />
                 </div>
-                <h1 class="promo-block-title">3rd Workshop on <br>Software Quality Assurance for AI</h1>
-                <p class="promo-block-text">Co-located with the International Conference on Software Analysis,
-                    Evolution and Reengineering (SANER)</p>
-                <p class="promo-block-text-bk"><strong>March 17th 2026 | Limassol, Cyprus</strong></p>
+                <h1 class="promo-block-title">4th Workshop on <br>Software Quality Assurance for AI</h1>
+                <p class="promo-block-text">Co-located with </p>
+                <p class="promo-block-text-bk"><strong>[DATE To DEFINE] | [LOCATION To DEFINE]</strong></p>
             </div>
 
             <div class="col-sm-6">
@@ -104,7 +153,7 @@
 <!-- Call for Papers Section -->
 <section id="call-for-papers" class="wrapper style1">
     <div class="inner">
-        <h1>SQA4AI 2026 - Workshop on Software Quality Assurance for AI</h1>
+        <h1>SQA4AI 2027 - Workshop on Software Quality Assurance for AI</h1>
         <h2>Call for Papers</h2>
 
         <div class="content-box">
@@ -208,13 +257,13 @@
                 practically possible, and including links in a Data Availability section in their manuscripts.
             </p>
             <p>
-                SQA4AI 2026 employs a double-anonymous review process. Do not include author names or affiliations
-                in submissions. All references to the author’s prior work should be in the
+                SQA4AI 2027 employs a double-anonymous review process. Do not include author names or affiliations
+                in submissions. All references to the author's prior work should be in the
                 third person. Any online supplements, replication packages,
                 etc., referred to in the work should also be anonymized. Advice
                 for sharing supplements anonymously can be found <a
                     href="https://github.com/dgraziotin/disclose-data-dbr-first-then-opendata">here</a>.
-                By submitting to SQA4AI 2026, authors agree to the <a
+                By submitting to SQA4AI 2027, authors agree to the <a
                     href="https://www.acm.org/publications/policies/plagiarism-overview">ACM Policy and Procedures
                 on Plagiarism, Misrepresentation, and Falsification</a>.
                 Papers submitted must not be published or under review elsewhere. The Program Chairs may use
@@ -231,56 +280,55 @@
             <h4>Submission Link</h4>
             <p>
                 All papers must be submitted via <strong>EasyChair</strong>.
-                To submit, click on the “Submit Paper” button, select “New Submission”, and choose the track <i>“3rd
-                Workshop on Software Quality Assurance for AI”.</i>
+                To submit, click on the "Submit Paper" button, select "New Submission", and choose the track <i>"4th
+                Workshop on Software Quality Assurance for AI".</i>
 
             </p>
             <div style="text-align: center; margin-top: 20px;">
-                <a href="https://easychair.org/my/conference?conf=saner2026" class="submission-btn"
-                   target="_blank">Submit Paper</a>
+                <a href="#" class="submission-btn" target="_blank">Submit Paper (link coming soon)</a>
             </div>
         </div>
 
         <h3>Important Dates (🌍 AoE - UTC-12h )</h3>
         <div class="dates-grid">
-            <div class="date-card passed">
+            <div class="date-card upcoming">
                 <div class="date-card-header">
                     <div class="date-status-dot"></div>
-                    <span class="date-status-label">PASSED</span>
+                    <span class="date-status-label">TBD</span>
                 </div>
                 <div class="date-card-body">
-                    <div class="date-value">December 18, 2025</div>
-                    <div class="date-description">Abstract Submission (extended)</div>
+                    <div class="date-value">To be defined</div>
+                    <div class="date-description">Abstract Submission</div>
                 </div>
             </div>
-            <div class="date-card passed">
+            <div class="date-card upcoming">
                 <div class="date-card-header">
                     <div class="date-status-dot"></div>
-                    <span class="date-status-label">PASSED</span>
+                    <span class="date-status-label">TBD</span>
                 </div>
                 <div class="date-card-body">
-                    <div class="date-value">December 18, 2025</div>
+                    <div class="date-value">To be defined</div>
                     <div class="date-description">Paper Submission</div>
                 </div>
             </div>
-            <div class="date-card passed">
+            <div class="date-card upcoming">
                 <div class="date-card-header">
                     <div class="date-status-dot"></div>
-                    <span class="date-status-label">PASSED</span>
+                    <span class="date-status-label">TBD</span>
                 </div>
                 <div class="date-card-body">
-                    <div class="date-value">January 14, 2026</div>
+                    <div class="date-value">To be defined</div>
                     <div class="date-description">Notification of acceptance</div>
                 </div>
             </div>
 
-            <div class="date-card passed">
+            <div class="date-card upcoming">
                 <div class="date-card-header">
                     <div class="date-status-dot"></div>
-                    <span class="date-status-label">PASSED</span>
+                    <span class="date-status-label">TBD</span>
                 </div>
                 <div class="date-card-body">
-                    <div class="date-value">January 20, 2026</div>
+                    <div class="date-value">To be defined</div>
                     <div class="date-description">Camera-ready deadline</div>
                 </div>
             </div>
@@ -291,7 +339,7 @@
                     <span class="date-status-label">EVENT</span>
                 </div>
                 <div class="date-card-body">
-                    <div class="date-value">March 2026</div>
+                    <div class="date-value">2027</div>
                     <div class="date-description">Workshop date</div>
                 </div>
             </div>
@@ -300,7 +348,6 @@
 </section>
 
 <!-- Program Section -->
-
 <section id="program" class="wrapper style2">
     <div class="inner">
         <header class="align-center">
@@ -308,122 +355,12 @@
             <p style="text-align: center;">Scheduled sessions and accepted paper presentations</p>
         </header>
         <div class="content-box">
-            <p class="program-date"><strong>Date:</strong> March 17th, 2026</p>
-            <p class="program-location"><strong>Location:</strong> Hybrid (remote connection through Zoom) </p>
-            <p class="program-note"><em>Given the emerging situation in Cyprus, the workshop will be held hybrid,
-                with remote connection through Zoom. All times are in local time (EET - Eastern European
-                Time)</em>
+            <p class="program-date"><strong>Date:</strong> [TO DEFINE]</p>
+            <p class="program-location"><strong>Location:</strong> [TO DEFINE]</p>
+            <p class="program-note"><em>The detailed program will be published closer to the workshop date, once
+                the review process is complete.</em>
             </p>
         </div>
-
-        <div class="program-schedule">
-
-            <!-- SESSION 1 -->
-            <div class="program-item session">
-                <div class="program-time">14:00 - 15:30</div>
-                <div class="program-content">
-                    <h4>SQA4AI - Session 1</h4>
-                    <p class="program-track"><strong>Room: Remote</strong></p>
-
-                    <div class="discussion-item">
-                        <span class="discussion-time">14:00 – 14:15</span>
-                        <span>Workshop Introduction</span>
-                    </div>
-
-                    <div class="paper-cards">
-
-                        <div class="paper-card">
-                            <span class="paper-time">14:15 - 14:30</span>
-                            <div class="paper-title">CVE-Poisoning: Towards Human-Guided and Cost-Effective
-                                Detection of a Novel AI Data Poisoning Attack</div>
-                            <div class="paper-authors">Norbert Szolnoki Sándor, Gergő Balogh, Szabina Herman, Gabor
-                                Antal</div>
-                            <div class="paper-affiliation">Department of Software Engineering, University of Szeged;
-                                University of Szeged</div>
-                        </div>
-
-                        <div class="paper-card">
-                            <span class="paper-time">14:30 - 14:45</span>
-                            <div class="paper-title">An LLM-based Approach for Automatic ML Prototype Review</div>
-                            <div class="paper-authors">Selin Coban, Miguel Perez, Cagatay Akpinar, Baran Tanriverdi,
-                                Horst Lichter</div>
-                            <div class="paper-affiliation">Research Group Software Construction, RWTH Aachen
-                                University</div>
-                        </div>
-
-                        <div class="paper-card">
-                            <span class="paper-time">14:45 - 15:00</span>
-                            <div class="paper-title">From Threat Reports to Security Knowledge: Building an
-                                LLM-based
-                                Pipeline for AI Systems</div>
-                            <div class="paper-authors">Takuma Tsuchida, Yuya Fujiwara, Hironori Washizaki, Naoyasu
-                                Ubayashi</div>
-                            <div class="paper-affiliation">Waseda University</div>
-                        </div>
-
-                        <div class="paper-card">
-                            <span class="paper-time">15:00 - 15:15</span>
-                            <div class="paper-title">Enhancing Security Requirements Coverage via RAG and Automated
-                                Feedback Loops</div>
-                            <div class="paper-authors">Giuseppe Sabetta, Alfonso Cannavale, Fabio Palomba, Andrea De
-                                Lucia</div>
-                            <div class="paper-affiliation">University of Salerno</div>
-                        </div>
-
-                        <div class="paper-card">
-                            <span class="paper-time">15:15 - 15:30</span>
-                            <div class="paper-title">Empirical Evaluation of Open Source Large Language Models for
-                                Paper Selection: Are LLMs Trustworthy Tools for Scoping Reviews?</div>
-                            <div class="paper-authors">Homayoun Safarpour, Gergő Balogh, Aondowase James Orban</div>
-                            <div class="paper-affiliation">University of Szeged</div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- SESSION 2 -->
-            <div class="program-item session">
-                <div class="program-time">16:00 - 16:30</div>
-                <div class="program-content">
-                    <h4>SQA4AI - Session 2</h4>
-                    <p class="program-track"><strong>Room: Remote</strong></p>
-
-                    <div class="paper-cards">
-
-                        <div class="paper-card">
-                            <span class="paper-time">16:00 - 16:15</span>
-                            <div class="paper-title">Toward Measuring Prompt Quality: A Preliminary Investigation on
-                                Prompt Smells</div>
-                            <div class="paper-authors">Antonio Della Porta, Gianmario Voria, Andrea Abbate, Raffaele
-                                Sulipano, Stefano Lambiase, Gemma Catolino, Fabio Palomba</div>
-                            <div class="paper-affiliation">University of Salerno; Aalborg University</div>
-                        </div>
-
-                        <div class="paper-card">
-                            <span class="paper-time">16:15 - 16:30</span>
-                            <div class="paper-title">Prompt, Assert, Repeat: Test-Driven Prompting as a Quality
-                                Assurance Strategy for Code-Generating LLMs</div>
-                            <div class="paper-authors">Brahma Reddy Korraprolu, Mohan Gangadhar Gudey, Raghu Reddy,
-                                Dhiraj SM Varanasi</div>
-                            <div class="paper-affiliation">IIIT Hyderabad, India</div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- TOWN HALL -->
-            <div class="program-item panel">
-                <span class="program-time">16:30 - 17:30</span>
-                <span class="program-content"><b> SQA4AI Town Hall: Software Quality for AI</b></span>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-
-    </div>
     </div>
 </section>
 
@@ -431,114 +368,15 @@
 <section id="papers" class="wrapper style1">
     <div class="inner">
         <h2>Accepted Papers</h2>
-
-        <div class="paper-item">
-            <h5 class="paper-title">CVE-Poisoning: Towards Human-Guided and Cost-Effective Detection of a Novel AI
-                Data
-                Poisoning Attack</h5>
-            <div class="paper-authors">
-                <span class="author">Norbert Szolnoki Sándor</span>,
-                <span class="author">Gergő Balogh</span>,
-                <span class="author">Szabina Herman</span>,
-                <span class="author">Gabor Antal</span>
-            </div>
-            <div class="paper-affiliation">
-                Department of Software Engineering, University of Szeged, Hungary; University of Szeged, Hungary
-            </div>
+        <div class="content-box">
+            <p><em>The list of accepted papers will be announced after the review process is completed.</em></p>
         </div>
-
-        <div class="paper-item">
-            <h5 class="paper-title">An LLM-based Approach for Automatic ML Prototype Review</h5>
-            <div class="paper-authors">
-                <span class="author">Selin Coban</span>,
-                <span class="author">Miguel Perez</span>,
-                <span class="author">Cagatay Akpinar</span>,
-                <span class="author">Baran Tanriverdi</span>,
-                <span class="author">Horst Lichter</span>
-            </div>
-            <div class="paper-affiliation">
-                Research Group Software Construction, RWTH Aachen University, Germany
-            </div>
-        </div>
-
-        <div class="paper-item">
-            <h5 class="paper-title">From Threat Reports to Security Knowledge: Building an LLM-based Pipeline for AI
-                Systems</h5>
-            <div class="paper-authors">
-                <span class="author">Takuma Tsuchida</span>,
-                <span class="author">Yuya Fujiwara</span>,
-                <span class="author">Hironori Washizaki</span>,
-                <span class="author">Naoyasu Ubayashi</span>
-            </div>
-            <div class="paper-affiliation">
-                Waseda University, Japan
-            </div>
-        </div>
-
-        <div class="paper-item">
-            <h5 class="paper-title">Enhancing Security Requirements Coverage via RAG and Automated Feedback Loops
-            </h5>
-            <div class="paper-authors">
-                <span class="author">Giuseppe Sabetta</span>,
-                <span class="author">Alfonso Cannavale</span>,
-                <span class="author">Fabio Palomba</span>,
-                <span class="author">Andrea De Lucia</span>
-            </div>
-            <div class="paper-affiliation">
-                University of Salerno, Italy
-            </div>
-        </div>
-
-        <div class="paper-item">
-            <h5 class="paper-title">Empirical Evaluation of Open Source Large Language Models for Paper Selection:
-                Are
-                LLMs Trustworthy Tools for Scoping Reviews?</h5>
-            <div class="paper-authors">
-                <span class="author">Homayoun Safarpour</span>,
-                <span class="author">Gergő Balogh</span>,
-                <span class="author">Aondowase James Orban</span>
-            </div>
-            <div class="paper-affiliation">
-                University of Szeged, Hungary
-            </div>
-        </div>
-
-        <div class="paper-item">
-            <h5 class="paper-title">Toward Measuring Prompt Quality: A Preliminary Investigation on Prompt Smells
-            </h5>
-            <div class="paper-authors">
-                <span class="author">Antonio Della Porta</span>,
-                <span class="author">Gianmario Voria</span>,
-                <span class="author">Andrea Abbate</span>,
-                <span class="author">Raffaele Sulipano</span>,
-                <span class="author">Stefano Lambiase</span>,
-                <span class="author">Gemma Catolino</span>,
-                <span class="author">Fabio Palomba</span>
-            </div>
-            <div class="paper-affiliation">
-                University of Salerno, Italy; Department of Computer Science, Aalborg University, Denmark
-            </div>
-        </div>
-
-        <div class="paper-item">
-            <h5 class="paper-title">Prompt, Assert, Repeat: Test-Driven Prompting as a Quality Assurance Strategy
-                for
-                Code-Generating LLMs</h5>
-            <div class="paper-authors">
-                <span class="author">Brahma Reddy Korraprolu</span>,
-                <span class="author">Mohan Gangadhar Gudey</span>,
-                <span class="author">Raghu Reddy</span>,
-                <span class="author">Dhiraj SM Varanasi</span>
-            </div>
-            <div class="paper-affiliation">
-                IIIT Hyderabad, India
-            </div>
-        </div>
-
     </div>
 </section>
 
 <!-- Committee Section -->
+<!-- TODO: Confirm/update Workshop Chairs, Publicity & Web Chairs and Program Committee for the 2027 edition.
+     The list below has been carried over from the 2026 edition as a starting placeholder. -->
 <section id="committee" class="wrapper style2">
     <div class="inner">
         <h2>Organization</h2>
@@ -547,37 +385,44 @@
         <div class="flex flex-4">
             <div class="box person">
                 <div class="image round">
-                    <img src="images/gilberto-recupito.jpg" alt="Gilberto Recupito" />
+                    <img src="../images/Giusy.jpg" alt="Giusy Annunziata" />
                 </div>
                 <h4>Gilberto Recupito</h4>
                 <p class="affiliation">University of Salerno<br>Italy</p>
             </div>
             <div class="box person">
                 <div class="image round">
-                    <img src="images/giammaria-giordano.jpg" alt="Giammaria Giordano" />
+                    <img src="../images/gilberto-recupito.jpg" alt="Gilberto Recupito" />
                 </div>
-                <h4>Giammaria Giordano</h4>
-                <p class="affiliation">University of Salerno<br>Italy</p>
+                <h4>Gilberto Recupito</h4>
+                <p class="affiliation">Vrije Universiteit Brussel<br>Belgium</p>
             </div>
             <div class="box person">
                 <div class="image round">
-                    <img src="images/rick.webp" alt="Rick Kazman" />
+                    <img src="../images/giammaria-giordano.jpg" alt="Giammaria Giordano" />
+                </div>
+                <h4>Giammaria Giordano</h4>
+                <p class="affiliation">Pegaso University<br>Italy</p>
+            </div>
+            <div class="box person">
+                <div class="image round">
+                    <img src="../images/rick.webp" alt="Rick Kazman" />
                 </div>
                 <h4>Rick Kazman</h4>
                 <p class="affiliation">University of Hawaii<br>USA</p>
             </div>
             <div class="box person">
                 <div class="image round">
-                    <img src="images/ValentinaLenarduzzi.jpg" alt="Valentina Lenarduzzi" />
+                    <img src="../images/ValentinaLenarduzzi.jpg" alt="Valentina Lenarduzzi" />
                 </div>
                 <h4>Valentina Lenarduzzi</h4>
 
-                <p class="affiliation">University of Southern Denmark<br>&<br>University of Oulu<br>Finland</p>
+                <p class="affiliation">University of Southern Denmark</p>
 
             </div>
 
         </div>
-
+<!--
         <h3>Publicity & Web Chairs</h3>
 
         <div class="flex flex-4">
@@ -586,7 +431,7 @@
             <div class="box person" style="visibility: hidden;"></div>
             <div class="box person">
                 <div class="image round">
-                    <img src="images/alessandra-parziale.jpg" alt="Alessandra Parziale" />
+                    <img src="../images/alessandra-parziale.jpg" alt="Alessandra Parziale" />
                 </div>
                 <h4>Alessandra Parziale</h4>
                 <p class="affiliation">University of Salerno<br>Italy</p>
@@ -594,7 +439,7 @@
 
             <div class="box person">
                 <div class="image round">
-                    <img src="images/alfonso-cannavale.jpg" alt="Alfonso Cannavale" />
+                    <img src="../images/alfonso-cannavale.jpg" alt="Alfonso Cannavale" />
                 </div>
                 <h4>Alfonso Cannavale</h4>
                 <p class="affiliation">University of Salerno<br>Italy</p>
@@ -628,6 +473,7 @@
                 </div>
             </div>
         </div>
+-->
     </div>
 </section>
 
@@ -640,30 +486,39 @@
                 <h3>Email Us</h3>
                 <p>Get in touch with the workshop organizers for any questions or inquiries.</p>
                 <p>
-                    <strong>Gilberto Recupito:</strong> <a
-                        href="mailto:grecupito@unisa.it">grecupito@unisa.it</a><br><br>
+                    <strong>Giusy Annunziata:</strong> <a
+                        href="mailto:gannunziata@unisa.it">gannunziata@unisa.it</a><br><br>
 
+                    <strong>Gilberto Recupito:</strong> <a
+                        href="mailto:gilberto.recupito@vub.be">gilberto.recupito@vub.be</a><br><br>
 
                     <strong>Giammaria Giordano:</strong> <a
-                        href="mailto:giagiordano@unisa.it">giagiordano@unisa.it</a><br><br>
+                        href="mailto:giammaria.giordano@unipegaso.it">giammaria.giordano@unipegaso.it</a><br><br>
 
                     <strong>Rick Kazman:</strong> <a href="mailto:kazman@hawaii.edu">kazman@hawaii.edu</a><br><br>
 
                     <strong>Valentina Lenarduzzi:</strong> <a
-                        href="mailto:valentina.lenarduzzi@oulu.fi">valentina.lenarduzzi@oulu.fi</a><br><br>
+                        href="mailto:lennarduzzi@imada.sdu.dk">lennarduzzi@imada.sdu.dk</a><br><br>
 
                 </p>
             </div>
             <div class="content-box">
                 <h3>Previous Editions</h3>
-                <p>This is the 3rd edition of the SQA4AI workshop. Previous editions include:</p>
+                <p>This is the 4th edition of the SQA4AI workshop. Previous editions include:</p>
+
+                <p><strong>SQA4AI 2026:</strong> 3rd Workshop on Software Quality Assurance for AI<br>
+                    <em>Co-located with SANER 2026, Limassol, Cyprus</em> &mdash;
+                    <a href="../index.html">view archived page</a>
+                </p>
 
                 <p><strong>SQA4AI 2025:</strong> 2nd Workshop on Software Quality Assurance for AI<br>
-                    <em>Co-located with SANER 2025, Montréal, Canada</em>
+                    <em>Co-located with SANER 2025, Montréal, Canada</em> &mdash;
+                    <a href="https://sqa4ai2025.github.io/SQA4AI2025/index.html" target="_blank" rel="noopener">view archived page</a>
                 </p>
 
                 <p><strong>SQA4AI 2022:</strong> 1st Workshop on Software Quality Assurance for AI<br>
-                    <em>Co-located with SANER 2022, Honolulu, Hawaii</em>
+                    <em>Co-located with SANER 2022, Honolulu, Hawaii</em> &mdash;
+                    <a href="https://sqa4ai.github.io/sqa4ai2022/" target="_blank" rel="noopener">view archived page</a>
                 </p>
 
 
@@ -690,10 +545,10 @@
 </footer>
 
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/skel.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
 
 </body>
 
