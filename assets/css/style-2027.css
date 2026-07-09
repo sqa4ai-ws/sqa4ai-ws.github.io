@@ -1,0 +1,916 @@
+/* ===== Brand color overrides (sampled from logo) ===== */
+
+h1 {
+    color: #1e293b;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 1.5em 0;
+    text-align: center;
+    font-size: 2.75em;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #0d2a40 0%, #13b7cc 50%, #091d2c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 800;
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 2em;
+    position: relative;
+    background: linear-gradient(135deg, #0d2a40 0%, #13b7cc 50%, #091d2c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #0d2a40, #13b7cc, #091d2c);
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+
+section.wrapper::before,
+article.wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(600px circle at 50% 50%, rgba(13, 42, 64, 0.02), transparent 40%);
+    pointer-events: none;
+}
+
+section.wrapper.style1,
+article.wrapper.style1 {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-top: 1px solid rgba(13, 42, 64, 0.1);
+}
+
+section.wrapper.style2,
+article.wrapper.style2 {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border-top: 1px solid rgba(19, 183, 204, 0.2);
+}
+
+/* Custom styles for navbar and promo-block classes */
+
+/* Modern Navbar positioned at top of page */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10001;
+    background: rgba(255, 255, 255, 0.95);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(13, 42, 64, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+}
+
+.header.navbar-sticky {
+    position: fixed;
+    top: 0;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 30px rgba(13, 42, 64, 0.15);
+    border-bottom: 1px solid rgba(13, 42, 64, 0.2);
+    transform: translateY(0);
+}
+
+.navbar-toggle:hover {
+    background: rgba(13, 42, 64, 0.1);
+    color: #0d2a40;
+}
+
+.navbar-logo-text:hover {
+    color: #0d2a40;
+    text-decoration: none;
+}
+
+/* Logo when navbar is sticky */
+.header.navbar-sticky .logo-text {
+    color: #0d2a40;
+}
+
+.header.navbar-sticky .navbar-logo-text {
+    color: #0d2a40;
+}
+
+/* Hover effects */
+.nav-item-child:hover,
+.nav-item-hover:hover {
+    color: #0d2a40;
+    background: rgba(13, 42, 64, 0.08);
+    transform: translateY(-1px);
+}
+
+/* Active link indicator */
+.nav-item-child::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #0d2a40;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .navbar .container {
+        padding: 0 20px;
+    }
+
+    .navbar-toggle {
+        display: block;
+        order: 3;
+    }
+
+    .nav-collapse {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        border-top: 1px solid rgba(13, 42, 64, 0.1);
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-collapse.show {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item-child {
+        padding: 15px 20px;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(13, 42, 64, 0.05);
+    }
+
+    .nav-item:last-child .nav-item-child {
+        border-bottom: none;
+    }
+}
+
+/* Promo block (banner) styles */
+.promo-block {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background:
+            linear-gradient(135deg, rgba(13, 42, 64, 0.9) 0%, rgba(19, 183, 204, 0.3) 50%, rgba(9, 29, 44, 0.9) 100%),
+            url('../../images/background.jpg') center/cover no-repeat;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Modern 2025 Content Boxes */
+.content-box {
+    background: #ffffff;
+    border: 2px solid rgba(13, 42, 64, 0.1);
+    border-radius: 16px;
+    padding: 3rem;
+    margin: 3rem 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(13, 42, 64, 0.08);
+}
+
+.content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0d2a40, #13b7cc, #091d2c);
+    border-radius: 16px 16px 0 0;
+}
+
+.content-box:hover {
+    transform: translateY(-8px);
+    border-color: rgba(13, 42, 64, 0.3);
+    box-shadow:
+            0 20px 40px rgba(13, 42, 64, 0.15),
+            0 0 0 1px rgba(13, 42, 64, 0.1);
+}
+
+.content-box.highlight {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #ffffff 100%);
+    border-color: rgba(19, 183, 204, 0.3);
+}
+
+.content-box.highlight::before {
+    background: linear-gradient(90deg, #13b7cc, #0d2a40, #091d2c);
+}
+
+/* Submission Button Styles */
+.submission-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #0d2a40, #13b7cc);
+    color: white !important;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(13, 42, 64, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.submission-btn:hover {
+    background: linear-gradient(135deg, #091d2c, #0d2a40);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(13, 42, 64, 0.4);
+    text-decoration: none;
+    color: white !important;
+}
+
+.submission-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(13, 42, 64, 0.3);
+}
+
+ul li {
+    position: relative;
+    padding: 1rem 0 1rem 2.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+    color: #1e293b;
+    font-weight: 450;
+    font-size: 1.05rem;
+    border-left: 2px solid rgba(13, 42, 64, 0.1);
+    transition: all 0.3s ease;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(45deg, #0d2a40, #13b7cc);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(13, 42, 64, 0.3);
+}
+
+ul li:hover {
+    color: #0f172a;
+    border-left-color: rgba(13, 42, 64, 0.4);
+}
+
+/* Modern Links */
+a {
+    color: #0d2a40;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #091d2c;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0d2a40, #13b7cc);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Date list styling */
+.date-list span {
+    color: #0d2a40;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* General span styling for labels */
+span {
+    color: #0d2a40;
+    font-weight: 600;
+}
+
+/* Modern Section Styling */
+.modern-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 20px;
+    padding: 0;
+    margin: 3rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(13, 42, 64, 0.1);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modern-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    border-color: rgba(13, 42, 64, 0.2);
+}
+
+/* Section Headers */
+.section-header {
+    background: linear-gradient(135deg, #0d2a40 0%, #13b7cc 100%);
+    padding: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Submission Guidelines Styling */
+.submission-guidelines .highlight-text {
+    background: rgba(13, 42, 64, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #0d2a40;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #1e293b;
+}
+
+/* Schedule Styling */
+.modern-schedule {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 20px;
+    margin: 3rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(13, 42, 64, 0.1);
+    overflow: hidden;
+}
+
+.schedule-item:hover {
+    background: rgba(13, 42, 64, 0.02);
+}
+
+.schedule-time {
+    width: 120px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #0d2a40;
+    font-family: 'Inter', monospace;
+    position: relative;
+    z-index: 2;
+}
+
+.schedule-time::after {
+    content: '';
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background: #0d2a40;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #e2e8f0;
+}
+
+.event-venue {
+    font-size: 0.85rem;
+    color: #0d2a40;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(13, 42, 64, 0.1);
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.schedule-item.session .schedule-time::after {
+    background: #0d2a40;
+}
+
+/* Program Schedule Styling */
+.program-schedule {
+    margin: 2rem 0;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(13, 42, 64, 0.08);
+    border: 2px solid rgba(13, 42, 64, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.program-schedule::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0d2a40, #13b7cc, #091d2c);
+    z-index: 10;
+}
+
+.program-time {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #0d2a40;
+    background: rgba(13, 42, 64, 0.08);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(13, 42, 64, 0.1);
+}
+
+.program-venue {
+    font-size: 0.75rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0.2rem 0;
+    padding: 0.15rem 0.5rem;
+    background: #0d2a40;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.program-content ul li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #0d2a40;
+    font-size: 0.8rem;
+    top: 0.1rem;
+}
+
+/* Program Item Types */
+.program-item.session {
+    background: linear-gradient(135deg, rgba(13, 42, 64, 0.05) 0%, rgba(13, 42, 64, 0.02) 100%);
+    border-left: 4px solid #0d2a40;
+}
+
+.program-date {
+    color: #0d2a40;
+    font-weight: 600;
+}
+
+.paper-card {
+    background: #ffffff;
+    border-left: 3px solid #0d2a40;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+    padding: 0.6rem 0.75rem;
+    transition: all 0.2s ease;
+}
+
+.paper-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #0d2a40, #13b7cc);
+}
+
+.paper-card:hover {
+    border-color: rgba(13, 42, 64, 0.25);
+    background: rgba(13, 42, 64, 0.01);
+}
+
+.paper-time {
+    font-size: 0.8rem;
+    color: #0d2a40;
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+.paper-category-card.research {
+    border-color: rgba(13, 42, 64, 0.2);
+}
+
+.paper-category-card.research:hover {
+    border-color: rgba(13, 42, 64, 0.4);
+}
+
+.paper-category-card.research .category-header {
+    background: linear-gradient(135deg, rgba(13, 42, 64, 0.05) 0%, rgba(19, 183, 204, 0.05) 100%);
+}
+
+.page-limit {
+    display: inline-block;
+    background: rgba(13, 42, 64, 0.1);
+    color: #0d2a40;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.paper-category {
+    margin: 3rem 0;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(13, 42, 64, 0.12);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(13, 42, 64, 0.08);
+}
+
+.category-title {
+    background: linear-gradient(135deg, #0d2a40 0%, #13b7cc 100%);
+    color: white;
+    padding: 2rem 2.5rem;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.paper-item {
+    padding: 1.5rem;
+    border-bottom: none;
+    position: relative;
+    background: #ffffff;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    border: 1px solid rgba(13, 42, 64, 0.1);
+    box-shadow: 0 2px 12px rgba(13, 42, 64, 0.06);
+}
+
+.paper-item .author {
+    color: #0d2a40;
+    font-weight: 500;
+}
+
+.paper-item .paper-abstract {
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0.8rem 0 0 0;
+    padding: 1rem;
+    background: rgba(13, 42, 64, 0.02);
+    border-radius: 6px;
+    border-left: 3px solid rgba(13, 42, 64, 0.2);
+}
+
+/* Modern Committee Cards */
+.box.person {
+    background: #ffffff;
+    border: 2px solid rgba(13, 42, 64, 0.1);
+    border-radius: 16px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(13, 42, 64, 0.08);
+}
+
+.box.person::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0d2a40, #13b7cc, #091d2c);
+    border-radius: 16px 16px 0 0;
+}
+
+.box.person:hover {
+    transform: translateY(-12px) scale(1.02);
+    border-color: rgba(13, 42, 64, 0.3);
+    box-shadow:
+            0 25px 50px rgba(13, 42, 64, 0.2),
+            0 0 0 1px rgba(13, 42, 64, 0.1);
+}
+
+.box.person .image.round img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid rgba(13, 42, 64, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box.person:hover .image.round img {
+    border-color: rgba(13, 42, 64, 0.6);
+    box-shadow: 0 0 30px rgba(13, 42, 64, 0.3);
+}
+
+/* Sticky Navbar Enhancements */
+.header.navbar-sticky {
+    position: fixed;
+    top: 100;
+    bottom: auto;
+    background: rgba(255, 255, 255, 0.98);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(13, 42, 64, 0.15);
+    border-top: none;
+    border-bottom: 1px solid rgba(13, 42, 64, 0.2);
+    animation: slideDown 0.3s ease-out;
+}
+
+/* ===== Hero: white background under the blue overlay (image removed for now) ===== */
+.promo-block {
+    background:
+            linear-gradient(135deg, rgba(13, 42, 64, 0.92) 0%, rgba(19, 183, 204, 0.35) 50%, rgba(9, 29, 44, 0.92) 100%),
+            #ffffff;
+}
+
+/* ===== Cleaner / more elegant: soften border-radius across cards, buttons, badges ===== */
+.date-card,
+.box.person,
+.box.person::before,
+.content-box,
+.submission-btn,
+.dropdown-menu {
+    border-radius: 4px !important;
+}
+
+.box.person .image.round img {
+    border-radius: 50%; /* keep circular profile photos */
+}
+
+/* ===== Remove status dots on date cards ===== */
+.date-status-dot {
+    display: none;
+}
+
+/* ===== Workshop Chairs / person cards: consistent proportions ===== */
+.flex.flex-4 .box.person {
+    aspect-ratio: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box.person .affiliation {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 980px) {
+    .flex.flex-4 .box.person {
+        aspect-ratio: auto;
+        min-height: 260px;
+    }
+}
+
+
+/* ===== FIX 1: No gradient text — solid colors only (gradients stay on lines/buttons) ===== */
+h1 {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    color: #0d2a40; /* primary */
+}
+
+h2 {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    color: #13b7cc; /* secondary */
+}
+
+.date-card.upcoming .date-value,
+.date-card.workshop .date-value {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    color: #059669;
+}
+
+/* ===== FIX 2: Remove separator dots + lines in the NAVBAR only =====
+   (root cause: the global "Modern Lists" ul/li rule adds a border-left
+   line + gradient dot to every <li>, including nav items. We neutralize
+   it just for the navbar so normal content lists keep their style.) */
+.navbar-nav li,
+.navbar-nav .nav-item {
+    border-left: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.navbar-nav li::before,
+.navbar-nav .nav-item::before {
+    display: none;
+}
+
+/* ===== FIX 3: More breathing room between logo and first nav item ===== */
+.nav-collapse .menu-container {
+    margin-left: 56px;
+}
+
+/* ===== FIX 4: Removed the lines (see FIX 2) so the highlight rectangle
+   now matches the actual hoverable/clickable area — no more mismatch
+   between a perceived "cell" and what actually lights up. ===== */
+
+
+/* ===== FIX: Consistent background across all sections =====
+   main.css alternates .wrapper.style1 (light gray) and .wrapper.style2
+   (light blue) per section. We unify everything to a single background. ===== */
+section.wrapper,
+article.wrapper,
+section.wrapper.style1,
+article.wrapper.style1,
+section.wrapper.style2,
+article.wrapper.style2 {
+    background: #ffffff;
+    border-top: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+/* ===== FIX: Dropdown menu colors (Previous Editions) =====
+   Overrides the inline <style> block colors so it matches the new palette. ===== */
+.dropdown-menu li a {
+    color: #13b7cc;
+}
+
+.dropdown-menu li a:hover {
+    color: #0d2a40;
+    background: rgba(13, 42, 64, 0.08);
+}
+
+/* ===== FIX: Organizer / Chair cards — always one line, capped size,
+   more vertical/elongated, no overflow or oversized last-row items ===== */
+.flex.flex-4 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.flex.flex-4 .box.person {
+    flex: 1 1 0;
+    width: auto;
+    max-width: 220px;
+    aspect-ratio: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 1.5rem 1rem;
+}
+
+/* Empty placeholder cards (used previously to center rows) are no longer
+   needed since flex + justify-content:center handles centering on its own. */
+.flex.flex-4 .box.person:empty {
+    display: none;
+}
+
+.flex.flex-4 .box.person .image.round img {
+    width: 84px;
+    height: 84px;
+}
+
+.flex.flex-4 .box.person h4 {
+    font-size: 1.05rem;
+    margin: 1rem 0 0.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.flex.flex-4 .box.person .affiliation {
+    font-size: 0.85rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 900px) {
+    .flex.flex-4 {
+        flex-wrap: wrap;
+    }
+    .flex.flex-4 .box.person {
+        flex: 1 1 40%;
+        max-width: 45%;
+        aspect-ratio: 3 / 4;
+    }
+}
+
+/* ===== FIX: Important Dates — 3-state color system =====
+   .pending = not yet active/defined (neutral gray)
+   .active  = currently open (secondary teal)
+   .done    = completed (muted navy, strikethrough date)
+   .workshop = the event itself (solid primary navy, unchanged special role) */
+.date-card.pending,
+.date-card.upcoming {
+    background: #f8fafc;
+    border-color: rgba(100, 116, 139, 0.18);
+}
+
+.date-card.pending .date-status-label,
+.date-card.upcoming .date-status-label {
+    background: rgba(100, 116, 139, 0.12);
+    color: #64748b;
+    border: 1px solid rgba(100, 116, 139, 0.2);
+}
+
+.date-card.pending .date-value,
+.date-card.upcoming .date-value {
+    color: #64748b;
+}
+
+.date-card.active {
+    background: linear-gradient(135deg, #ffffff 0%, #e6fbfd 100%);
+    border-color: rgba(19, 183, 204, 0.35);
+}
+
+.date-card.active .date-status-label {
+    background: rgba(19, 183, 204, 0.14);
+    color: #0e8fa3;
+    border: 1px solid rgba(19, 183, 204, 0.3);
+}
+
+.date-card.active .date-value {
+    color: #0e8fa3;
+}
+
+.date-card.done {
+    background: #f1f5f9;
+    border-color: rgba(13, 42, 64, 0.15);
+}
+
+.date-card.done .date-status-label {
+    background: rgba(13, 42, 64, 0.08);
+    color: #0d2a40;
+    border: 1px solid rgba(13, 42, 64, 0.15);
+}
+
+.date-card.done .date-value {
+    color: #0d2a40;
+    text-decoration: line-through;
+    text-decoration-color: rgba(13, 42, 64, 0.4);
+}
+
+.date-card.workshop {
+    background: linear-gradient(135deg, #0d2a40 0%, #091d2c 100%);
+    border-color: #0d2a40;
+}
+
+.date-card.workshop .date-status-label {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.date-card.workshop .date-value {
+    color: #ffffff;
+}
+
+.date-card.workshop .date-description {
+    color: rgba(255, 255, 255, 0.8);
+}
